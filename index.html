@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Ekranı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Kayıt Ekranı</h2>
+  <form id="kayitForm">
+      <label for="tcKimlik">TC Kimlik Numarası:</label>
+      <input type="text" id="tcKimlik" name="tcKimlik" required>
+
+      <label for="hedef">Hedef Seçin:</label>
+      <select id="hedef" name="hedef" required>
+          <option value="">Seçiniz...</option>
+          <option value="A">Hedef A</option>
+          <option value="B">Hedef B</option>
+      </select>
+
+      <button type="submit">Kayıt Ol</button>
+  </form>
+  <p>Hesabınız var mı? <a href="giris.html">Giriş Yapın</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

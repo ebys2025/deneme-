@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Ekranı</title>
+  <style>
+      body { font-family: Arial, sans-serif; margin: 20px; }
+      label { display: block; margin: 10px 0 5px; }
+      input[type="text"], select { width: 100%; padding: 8px; margin-bottom: 10px; }
+      button { padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+      button:hover { background-color: #45a049; }
+  </style>
+</head>
+<body>
+
+<h2>Kayıt Ekranı</h2>
+
+<form id="kayitForm">
+  <label for="tcKimlik">TC Kimlik Numarası:</label>
+  <input type="text" id="tcKimlik" name="tcKimlik" required>
+
+  <label for="hedef">Hedef Seçin:</label>
+  <select id="hedef" name="hedef" required>
+      <option value="">Seçiniz...</option>
+      <option value="A">Hedef A</option>
+      <option value="B">Hedef B</option>
+  </select>
+
+  <button type="submit">Kayıt Ol</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
